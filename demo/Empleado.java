@@ -1,12 +1,16 @@
-package demo;
+
+package practica4;
+
 
 public class Empleado {
 	private String nombre;
 	private String apellidos;
 	private int edad;
-	private float salario;
+	float salario;
+        private String apellidoPaterno;
+        private String apellidoMaterno;
 
-	public Empleado() {
+	public Empleado(float salario) {
 
 	}
 
@@ -35,20 +39,17 @@ public class Empleado {
     }
 
     public int getEdad() {
-        return edad;
-    }
+        return edad;}
 
     public void setEdad(int edad) {
         if(edad > 0 && edad <= 100) {
-            this.edad = edad;
-        }
+            this.edad = edad;}
     }
 
     public float getSalario() {
-        return edad;
-    }
+        return salario;}
 
-    public void setSalario(float salario) {
-    	this.salario = salario;
-    }
+    public void setSalario(float salario) {    
+    	this.salario = salario;}
+    
 }
